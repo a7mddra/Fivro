@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "384436575346",
+    "firebase_url": "https://car-rental-a7md-dc08d-default-rtdb.firebaseio.com",
+    "project_id": "car-rental-a7md-dc08d",
+    "storage_bucket": "car-rental-a7md-dc08d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384436575346:android:046ab124341f10793636eb",
+        "android_client_info": {
+          "package_name": "com.example.car_rental_a7md"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD4AwA1NuUFLDkiLopEbSkIW4AKn0D53M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
