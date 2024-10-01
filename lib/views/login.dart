@@ -48,7 +48,6 @@ class _LoginState extends State<Login> with WidgetsBindingObserver {
     );
 
     if (res == 'Success') {
-      // ignore: use_build_context_synchronously
       Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
               webScreenLayout: WebScreenLayout(),
@@ -221,7 +220,7 @@ class _LoginState extends State<Login> with WidgetsBindingObserver {
           left: 10,
           child: CircleAvatar(
             backgroundColor: Colors.white,
-            radius: 20, // You can adjust this size as needed
+            radius: 20,
             child: IconButton(
               icon: const Icon(
                 Icons.arrow_back_ios_new,

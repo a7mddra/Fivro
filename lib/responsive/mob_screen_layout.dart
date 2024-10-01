@@ -1,4 +1,3 @@
-// ignore_for_file: use_build_context_synchronously
 import 'dart:typed_data';
 import 'package:car_rental_a7md/rentee/home.dart';
 import 'package:car_rental_a7md/renter/home.dart';
@@ -63,7 +62,7 @@ class _MobScreenLayoutState extends State<MobScreenLayout> {
             .collection('users')
             .doc(user.uid)
             .get();
-        
+
         if (userSnap.exists) {
           userData = userSnap.data()!;
 
@@ -101,7 +100,8 @@ class _MobScreenLayoutState extends State<MobScreenLayout> {
         isLoading = true;
       });
 
-      QuerySnapshot carSnap = await FirebaseFirestore.instance.collection('cars').get();
+      QuerySnapshot carSnap =
+          await FirebaseFirestore.instance.collection('cars').get();
 
       if (carSnap.docs.isEmpty) {
         Navigator.of(context)
@@ -132,7 +132,8 @@ class _MobScreenLayoutState extends State<MobScreenLayout> {
         );
         mod = carData['model'];
         pri = carData['price'];
-        loc = LatLng(double.parse(carData['lat']), double.parse(carData['lng']));
+        loc =
+            LatLng(double.parse(carData['lat']), double.parse(carData['lng']));
         stt = carData['state'];
         img = file;
       });
@@ -147,7 +148,6 @@ class _MobScreenLayoutState extends State<MobScreenLayout> {
         loc: loc,
         stt: stt,
       )));
-
     } catch (e) {
       showSnackBar(context, e.toString());
     } finally {

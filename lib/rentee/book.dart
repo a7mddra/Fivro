@@ -1,5 +1,3 @@
-// ignore_for_file: use_build_context_synchronously
-
 import 'package:car_rental_a7md/utils/utils.dart';
 import 'package:car_rental_a7md/widgets/shimmer.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';

@@ -6,10 +6,10 @@ class Refresh extends StatefulWidget {
   const Refresh({super.key, required this.logic, required this.isLoading});
 
   @override
-  _RefreshState createState() => _RefreshState();
+  RefreshState createState() => RefreshState();
 }
 
-class _RefreshState extends State<Refresh> with SingleTickerProviderStateMixin {
+class RefreshState extends State<Refresh> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   double _lastStopPosition = 0.0;
 

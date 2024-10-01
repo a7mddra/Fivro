@@ -110,10 +110,8 @@ class _WebSignUpState extends State<WebSignUp> with WidgetsBindingObserver {
     );
 
     if (res == 'Success') {
-      // Check email verification before navigating
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser != null && currentUser.emailVerified) {
-        // ignore: use_build_context_synchronously
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
             webScreenLayout: WebScreenLayout(),
@@ -275,7 +273,7 @@ class _WebSignUpState extends State<WebSignUp> with WidgetsBindingObserver {
                             left: 10,
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
-                              radius: 20, // You can adjust this size as needed
+                              radius: 20,
                               child: IconButton(
                                 icon: const Icon(
                                   Icons.arrow_back_ios_new,

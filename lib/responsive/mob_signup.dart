@@ -104,7 +104,6 @@ class _MobSignUpState extends State<MobSignUp> with WidgetsBindingObserver {
     if (res == 'Success') {
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser != null && currentUser.emailVerified) {
-        // ignore: use_build_context_synchronously
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
             webScreenLayout: WebScreenLayout(),
@@ -292,7 +291,7 @@ class _MobSignUpState extends State<MobSignUp> with WidgetsBindingObserver {
                 left: 10,
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
-                  radius: 20, // You can adjust this size as needed
+                  radius: 20,
                   child: IconButton(
                     icon: const Icon(
                       Icons.arrow_back_ios_new,
@@ -536,7 +535,7 @@ class _MobSignUpState extends State<MobSignUp> with WidgetsBindingObserver {
                   left: 10,
                   child: CircleAvatar(
                     backgroundColor: Colors.white,
-                    radius: 20, // You can adjust this size as needed
+                    radius: 20,
                     child: IconButton(
                       icon: const Icon(
                         Icons.arrow_back_ios_new,

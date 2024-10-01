@@ -51,7 +51,6 @@ class _ProfileState extends State<Profile> {
         age = userData['age'];
       });
     } catch (e) {
-      // ignore: use_build_context_synchronously
       showSnackBar(context, e.toString());
     }
   }
@@ -98,7 +97,7 @@ class _ProfileState extends State<Profile> {
         isUpdate = false;
         Future.delayed(const Duration(milliseconds: 1300), () {
           setState(() {
-            //error = '';
+            error = '';
           });
         });
       });
@@ -188,7 +187,6 @@ class _ProfileState extends State<Profile> {
             });
           }
         });
-        // ignore: use_build_context_synchronously
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
               builder: (context) => const SignIn(

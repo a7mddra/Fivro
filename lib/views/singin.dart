@@ -51,7 +51,6 @@ class _SignInState extends State<SignIn> with WidgetsBindingObserver {
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser != null && currentUser.emailVerified) {
         await updateUData(_passwordController.text);
-        // ignore: use_build_context_synchronously
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
             webScreenLayout: WebScreenLayout(),

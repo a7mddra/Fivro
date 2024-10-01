@@ -12,18 +12,16 @@ class WebWelcomeScreen extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment:
-              CrossAxisAlignment.center, // Align items vertically
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Flexible(
-              flex: 1, // Allow image to take only necessary space
+              flex: 1,
               child: Image.asset(
                 'assets/images/onboarding.png',
                 alignment: Alignment.centerLeft,
               ),
             ),
-            const SizedBox(
-                width: 20), // Add a gap between the image and the column
+            const SizedBox(width: 20),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,7 +64,7 @@ class WebWelcomeScreen extends StatelessWidget {
             ),
             const SizedBox(width: 40),
             Flexible(
-              flex: 1, // Allow image to take only necessary space
+              flex: 1,
               child: Image.asset(
                 'assets/images/onboarding2.png',
                 alignment: Alignment.centerLeft,

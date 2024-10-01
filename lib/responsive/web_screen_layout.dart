@@ -7,6 +7,6 @@ class WebScreenLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
         backgroundColor: Colors.white,
-        body: Center(child: Text("this is web")));
+        body: Center(child: Text("web version under developing :)")));
   }
 }

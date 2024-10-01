@@ -103,7 +103,6 @@ class _Home1State extends State<Home1> with TickerProviderStateMixin {
         isLoading = false;
       });
     } catch (e) {
-      // ignore: use_build_context_synchronously
       showSnackBar(context, 'Error: $e');
     }
   }
@@ -127,7 +126,6 @@ class _Home1State extends State<Home1> with TickerProviderStateMixin {
       setState(() {
         isLoading = false;
       });
-      // ignore: use_build_context_synchronously
       showSnackBar(context, e.toString());
     }
   }
@@ -648,7 +646,7 @@ class _Home1State extends State<Home1> with TickerProviderStateMixin {
                             onPressed: () {
                               setState(() {
                                 settings = !settings;
-                                sort = false; // Hide second widget
+                                sort = false;
                               });
                             },
                             style: ElevatedButton.styleFrom(
